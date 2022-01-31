@@ -1,0 +1,468 @@
+2022-01-27 20:33:23.804 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21210 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 20:33:23.806 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 20:33:24.428 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 20:33:24.433 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 20:33:24.433 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 20:33:24.433 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 20:33:24.482 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 20:33:24.482 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 649 ms
+2022-01-27 20:33:24.866 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 20:33:24.882 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 20:33:24.890 [main] INFO  com.rock.HelloApplication - Started HelloApplication in 1.346 seconds (JVM running for 1.776)
+2022-01-27 20:33:43.486 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 20:33:43.487 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 20:33:43.487 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-01-27 20:33:43.512 [http-nio-8089-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-01-27 20:33:46.418 [http-nio-8089-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-01-27 20:33:46.424 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance
+2022-01-27 20:33:46.439 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 
+2022-01-27 20:33:46.705 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 2
+2022-01-27 21:31:39.811 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-01-27 21:31:39.819 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-01-27 21:31:48.190 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21550 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:31:48.191 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:31:48.854 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:31:48.859 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:31:48.859 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:31:48.859 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:31:48.897 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:31:48.897 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 679 ms
+2022-01-27 21:31:48.944 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:31:49.030 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:31:49.313 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 21:31:49.314 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:31:49.315 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-01-27 21:31:49.323 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 21:31:49.331 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 21:32:47.339 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21566 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:32:47.340 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:32:47.972 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:32:47.977 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:32:47.978 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:32:47.978 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:32:48.017 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:32:48.017 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 647 ms
+2022-01-27 21:32:48.071 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:32:48.160 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:32:48.492 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:32:48.505 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 21:32:48.512 [main] INFO  com.rock.HelloApplication - Started HelloApplication in 1.45 seconds (JVM running for 1.863)
+2022-01-27 21:33:06.906 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 21:33:06.906 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 21:33:06.907 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-01-27 21:33:09.425 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance
+2022-01-27 21:33:09.443 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 
+2022-01-27 21:33:09.682 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 2
+2022-01-27 21:33:30.353 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:33:34.372 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21573 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:33:34.375 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:33:35.025 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:33:35.030 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:33:35.031 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:33:35.031 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:33:35.079 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:33:35.080 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 678 ms
+2022-01-27 21:33:35.134 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:33:35.222 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:33:35.507 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 21:33:35.508 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:33:35.509 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-01-27 21:33:35.517 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 21:33:35.527 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 21:35:14.932 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21579 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:35:14.934 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:35:15.516 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:35:15.522 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:35:15.527 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:35:15.527 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:35:15.577 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:35:15.577 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 618 ms
+2022-01-27 21:35:15.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:35:15.958 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 21:35:15.966 [main] INFO  com.rock.HelloApplication - Started HelloApplication in 1.266 seconds (JVM running for 1.663)
+2022-01-27 21:35:24.496 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 21:35:24.497 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 21:35:24.498 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-01-27 21:35:24.518 [http-nio-8089-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-01-27 21:35:27.621 [http-nio-8089-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-01-27 21:35:27.860 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance
+2022-01-27 21:35:27.876 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 
+2022-01-27 21:35:28.120 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 2
+2022-01-27 21:36:28.131 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-01-27 21:36:28.138 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-01-27 21:36:33.788 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21591 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:36:33.789 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:36:34.365 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:36:34.370 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:36:34.370 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:36:34.370 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:36:34.417 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:36:34.417 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 603 ms
+2022-01-27 21:36:34.703 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 21:36:34.705 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-01-27 21:36:34.713 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 21:36:34.721 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 21:38:23.533 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21599 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:38:23.535 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:38:24.125 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:38:24.129 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:38:24.130 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:38:24.130 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:38:24.176 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:38:24.176 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 615 ms
+2022-01-27 21:38:24.228 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:38:24.309 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:38:24.577 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 21:38:24.578 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:38:24.580 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-01-27 21:38:24.587 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 21:38:24.595 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 21:38:33.740 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21603 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:38:33.742 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:38:34.332 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:38:34.336 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:38:34.337 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:38:34.337 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:38:34.371 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:38:34.372 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 606 ms
+2022-01-27 21:38:34.422 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:38:34.504 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:38:34.777 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 21:38:34.778 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:38:34.780 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-01-27 21:38:34.787 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 21:38:34.795 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 21:41:40.292 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21622 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:41:40.294 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:41:40.897 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:41:40.903 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:41:40.903 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:41:40.903 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:41:40.943 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:41:40.943 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 623 ms
+2022-01-27 21:41:40.994 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:41:41.078 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:41:41.359 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 21:41:41.359 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:41:41.361 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-01-27 21:41:41.369 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 21:41:41.379 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 21:43:37.106 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21633 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:43:37.108 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:43:37.723 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:43:37.727 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:43:37.727 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:43:37.727 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-27 21:43:37.778 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:43:37.778 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 645 ms
+2022-01-27 21:43:37.831 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:43:37.911 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:43:38.187 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Invocation of init method failed; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2022-01-27 21:43:38.188 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:43:38.190 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-01-27 21:43:38.198 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-27 21:43:38.206 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2022-01-27 21:46:02.305 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21657 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:46:02.308 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:46:02.909 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:46:02.913 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:46:02.914 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:46:02.914 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-01-27 21:46:02.959 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:46:02.959 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 620 ms
+2022-01-27 21:46:03.014 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:46:03.102 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:46:03.289 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-27 21:46:03.459 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:46:03.473 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 21:46:03.480 [main] INFO  com.rock.HelloApplication - Started HelloApplication in 1.421 seconds (JVM running for 1.87)
+2022-01-27 21:46:08.828 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 21:46:08.828 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 21:46:08.829 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-01-27 21:46:18.868 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 21:46:18.883 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 21:46:20.854 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 21:46:20.856 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?, ?
+2022-01-27 21:46:20.857 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Long), 1(Integer)
+2022-01-27 21:46:22.059 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 21:47:55.408 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-27 21:47:55.414 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:48:02.226 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21674 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:48:02.228 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:48:02.797 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:48:02.801 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:48:02.802 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:48:02.802 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-01-27 21:48:02.834 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:48:02.835 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 581 ms
+2022-01-27 21:48:02.884 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:48:02.965 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:48:03.149 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-27 21:48:03.314 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:48:03.328 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 21:48:03.335 [main] INFO  com.rock.HelloApplication - Started HelloApplication in 1.339 seconds (JVM running for 1.728)
+2022-01-27 21:48:07.727 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 21:48:07.727 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 21:48:07.728 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-01-27 21:48:12.715 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 21:48:12.731 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 21:48:14.138 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 21:48:14.141 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?, ?
+2022-01-27 21:48:14.143 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Long), 1(Integer)
+2022-01-27 21:48:14.370 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 21:48:26.307 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 21:48:26.308 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 21:48:27.565 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 21:48:27.566 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?, ?
+2022-01-27 21:48:27.566 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Long), 1(Integer)
+2022-01-27 21:48:27.788 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 21:48:34.547 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-27 21:48:34.552 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:48:39.777 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21685 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:48:39.778 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:48:40.390 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:48:40.395 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:48:40.395 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:48:40.396 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-01-27 21:48:40.432 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:48:40.433 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 626 ms
+2022-01-27 21:48:40.486 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:48:40.572 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:48:40.757 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-27 21:48:40.943 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:48:40.959 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 21:48:40.968 [main] INFO  com.rock.HelloApplication - Started HelloApplication in 1.433 seconds (JVM running for 1.831)
+2022-01-27 21:48:44.994 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 21:48:44.995 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 21:48:44.995 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-01-27 21:48:49.698 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 21:48:49.715 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 21:48:51.133 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 21:48:51.136 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 21:48:51.137 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 21:48:51.361 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 21:51:26.119 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-27 21:51:26.124 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 21:51:33.608 [main] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21703 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 21:51:33.609 [main] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 21:51:34.191 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 21:51:34.195 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:51:34.196 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 21:51:34.196 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-01-27 21:51:34.228 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 21:51:34.229 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 593 ms
+2022-01-27 21:51:34.279 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 21:51:34.360 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 21:51:34.536 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-27 21:51:34.704 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 21:51:34.719 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 21:51:34.726 [main] INFO  com.rock.HelloApplication - Started HelloApplication in 1.365 seconds (JVM running for 1.758)
+2022-01-27 21:51:53.324 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 21:51:53.324 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 21:51:53.325 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-01-27 21:51:58.547 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 21:51:58.563 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 21:51:59.955 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 21:51:59.958 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 21:51:59.959 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 21:52:00.173 [http-nio-8089-exec-1] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 22:33:30.624 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-27 22:33:30.625 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2022-01-27 22:37:03.821 [restartedMain] INFO  com.rock.HelloApplication - Starting HelloApplication using Java 1.8.0_151 on Rocks-MacBook-Pro.local with PID 21877 (/Users/rock/github/springboot_project/hello/target/classes started by rock in /Users/rock/github/springboot_project)
+2022-01-27 22:37:03.823 [restartedMain] INFO  com.rock.HelloApplication - No active profile set, falling back to default profiles: default
+2022-01-27 22:37:03.853 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-27 22:37:03.854 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-27 22:37:04.594 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+2022-01-27 22:37:04.600 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2022-01-27 22:37:04.600 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-01-27 22:37:04.601 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2022-01-27 22:37:04.649 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring embedded WebApplicationContext
+2022-01-27 22:37:04.650 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 796 ms
+2022-01-27 22:37:04.714 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-01-27 22:37:04.809 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-01-27 22:37:05.053 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-27 22:37:05.197 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-01-27 22:37:05.217 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2022-01-27 22:37:05.236 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path '/hello'
+2022-01-27 22:37:05.245 [restartedMain] INFO  com.rock.HelloApplication - Started HelloApplication in 1.697 seconds (JVM running for 2.147)
+2022-01-27 22:37:47.063 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/hello] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 22:37:47.063 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-01-27 22:37:47.064 [http-nio-8089-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-01-27 22:38:13.767 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 22:38:13.787 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 22:38:14.969 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 22:38:14.972 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 22:38:14.973 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 22:38:15.186 [http-nio-8089-exec-2] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 22:38:57.745 [http-nio-8089-exec-4] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 22:38:57.746 [http-nio-8089-exec-4] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 22:38:59.039 [http-nio-8089-exec-4] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 22:38:59.040 [http-nio-8089-exec-4] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 22:38:59.040 [http-nio-8089-exec-4] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 22:38:59.262 [http-nio-8089-exec-4] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 22:39:06.109 [http-nio-8089-exec-5] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 22:39:06.109 [http-nio-8089-exec-5] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 22:39:07.630 [http-nio-8089-exec-5] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 22:39:07.631 [http-nio-8089-exec-5] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 22:39:07.631 [http-nio-8089-exec-5] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 22:39:07.864 [http-nio-8089-exec-5] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 22:39:19.966 [http-nio-8089-exec-6] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 22:39:19.967 [http-nio-8089-exec-6] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 22:39:21.689 [http-nio-8089-exec-6] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 22:39:21.690 [http-nio-8089-exec-6] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 22:39:21.690 [http-nio-8089-exec-6] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 22:39:21.906 [http-nio-8089-exec-6] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 22:39:25.379 [http-nio-8089-exec-7] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 22:39:25.379 [http-nio-8089-exec-7] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 22:39:26.729 [http-nio-8089-exec-7] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 22:39:26.730 [http-nio-8089-exec-7] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 22:39:26.730 [http-nio-8089-exec-7] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 22:39:26.945 [http-nio-8089-exec-7] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 22:40:14.214 [http-nio-8089-exec-9] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==>  Preparing: SELECT count(0) FROM task_instance
+2022-01-27 22:40:14.216 [http-nio-8089-exec-9] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - ==> Parameters: 
+2022-01-27 22:40:15.506 [http-nio-8089-exec-9] DEBUG com.rock.mapper.TaskInstanceMapper.findAll_COUNT - <==      Total: 1
+2022-01-27 22:40:15.506 [http-nio-8089-exec-9] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==>  Preparing: select * from task_instance LIMIT ?
+2022-01-27 22:40:15.507 [http-nio-8089-exec-9] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - ==> Parameters: 1(Integer)
+2022-01-27 22:40:15.720 [http-nio-8089-exec-9] DEBUG com.rock.mapper.TaskInstanceMapper.findAll - <==      Total: 1
+2022-01-27 22:44:53.840 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-27 22:44:53.847 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
