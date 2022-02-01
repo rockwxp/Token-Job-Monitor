@@ -6,26 +6,21 @@ import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 
-
 /**
  * @author Rock
- * @date 1/26/22 9:56 PM
+ * @date 2/1/22 3:18 PM
  * @description TODO
  */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class TaskInstance {
-
-    private String id;
-    private String type;
-    private String value;
+public class Token {
+    private Integer id;
+    private String name;
+    private String lastTaskInstanceId;
     private Integer status;
-    private String taskOwner;
     private String createdBy;
     private String updatedBy;
     private Timestamp cratedTime;
     private Timestamp updatedTime;
-
-
 }

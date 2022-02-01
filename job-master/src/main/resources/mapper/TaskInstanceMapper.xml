@@ -2,9 +2,32 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.tensai.mapper.TaskInstanceMapper">
 
-    <select id="findAll" resultType="TaskInstance">
-        select id,type,value,task_owner as taskOwner,crated_time as cratedTime from task_instance
+    <select id="findAll" resultType="com.tensai.pojo.TaskInstance">
+        select
+            t_id as  id,
+            t_type as type,
+            t_value as value,
+            t_status as status,
+            t_task_owner as taskOwner,
+            t_created_by as createdBy,
+            t_updated_by as updatedBy,
+            t_crated_time as cratedTime,
+            t_updated_time as updatedTime
+        from t_task_instance
     </select>
 
+
+    <insert id="addTaskInstance" parameterType="com.tensai.pojo.TaskInstance">
+        insert into t_task_instance (t_id,t_type,t_value,t_status,t_task_owner,t_created_by,t_updated_by)
+        values (#{id},#{type},#{value},#{status},#{taskOwner},#{createdBy},#{updatedBy})
+    </insert>
+
+    <update id="updateTaskInstance" parameterType="com.tensai.pojo.TaskInstance">
+        UPDATE t_task_instance
+        SET t_status = 0,t_updated_by=#{updatedBy}, t_updated_time=#{updatedTime}
+        WHERE t_id = #{id};
+
+    </update>
 </mapper>
+
 

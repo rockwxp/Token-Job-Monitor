@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tensai.mapper.TokenMapper">
+
+    <select id="findAll" resultType="Token">
+        select
+            t_id as id,
+            t_name as name,
+            t_last_task_instance_id as lastTaskInstanceId,
+            t_status as status,
+            t_created_by as createdBy,
+            t_updated_by as updatedBy,
+            t_crated_time as cratedTime,
+            t_updated_time as updatedTime
+        from t_task_token
+    </select>
+
+    <select id="getTaskToken" resultType="Token">
+        select
+            t_id as id,
+            t_name as name,
+            t_last_task_instance_id as lastTaskInstanceId,
+            t_status as status,
+            t_created_by as createdBy,
+            t_updated_by as updatedBy,
+            t_crated_time as cratedTime,
+            t_updated_time as updatedTime
+        from t_task_token where t_status = 0 order by t_id limit 1
+    </select>
+
+    <update id="updateTaskToken" parameterType="com.tensai.pojo.Token">
+        UPDATE t_task_token
+        SET t_last_task_instance_id = #{lastTaskInstanceId}, t_status = #{status},t_updated_by=#{updatedBy}, t_updated_time=#{updatedTime}
+            WHERE t_id = #{id};
+    </update>
+
+    <select id="findByTokenName" resultType="Token" parameterType="string">
+        select
+            t_id as id,
+            t_name as name,
+            t_last_task_instance_id as lastTaskInstanceId,
+            t_status as status,
+            t_created_by as createdBy,
+            t_updated_by as updatedBy,
+            t_crated_time as cratedTime,
+            t_updated_time as updatedTime
+        from t_task_token where t_status = 1 and t_name =#{tokenName}
+    </select>
+
+</mapper>

@@ -3,6 +3,7 @@ package com.tensai.service;
 
 
 import com.tensai.pojo.TaskInstance;
+import com.tensai.pojo.Token;
 
 import java.util.List;
 
@@ -13,4 +14,10 @@ import java.util.List;
  */
 public interface TaskInstanceService {
     List<TaskInstance> findAll();
+
+    Integer insertTaskInstance(TaskInstance taskInstance);
+
+    TaskInstance addTaskInstance(Token taskToken,String taskOwner);
+
+    Integer updateTaskInstance(TaskInstance taskInstance);
 }
