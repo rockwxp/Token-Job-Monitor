@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea468913-ed93-4930-a5cf-516f67119ab3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/src/main/bin/sql/dml.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/controller/TokenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/mapper/TokenMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/pojo/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/service/impl/TokenServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/src/main/resources/mapper/TokenMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/main/bin/sql/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/main/bin/sql/ddl.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/controller/TaskInstanceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/controller/TaskInstanceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/mapper/TaskInstanceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/mapper/TaskInstanceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/pojo/TaskInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/pojo/TaskInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/service/TaskInstanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/service/TaskInstanceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/service/impl/TaskInstanceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/main/java/com/tensai/service/impl/TaskInstanceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/main/resources/mapper/TaskInstanceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/main/resources/mapper/TaskInstanceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job-master/src/test/java/com/tensai/JobMasterApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/src/test/java/com/tensai/JobMasterApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="ea468913-ed93-4930-a5cf-516f67119ab3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +216,7 @@
       <workItem from="1643212410553" duration="135000" />
       <workItem from="1643212559639" duration="9478000" />
       <workItem from="1643380280587" duration="50000" />
-      <workItem from="1643380342487" duration="49083000" />
+      <workItem from="1643380342487" duration="49420000" />
     </task>
     <servers />
   </component>
