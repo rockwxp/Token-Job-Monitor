@@ -17,21 +17,25 @@
 
     <select id="getTaskToken" resultType="Token">
         select
-            t_id as id,
-            t_name as name,
-            t_last_task_instance_id as lastTaskInstanceId,
-            t_status as status,
-            t_created_by as createdBy,
-            t_updated_by as updatedBy,
-            t_crated_time as cratedTime,
-            t_updated_time as updatedTime
-        from t_task_token where t_status = 0 order by t_id limit 1
+            t.t_id as id,
+            t.t_name as name,
+            t.t_last_task_instance_id as lastTaskInstanceId,
+            t.t_status as status,
+            t.t_heartbeat as heartbeat,
+            t.t_last_heartbeat_time as last_heartbeat_time,
+            t.t_created_by as createdBy,
+            t.t_updated_by as updatedBy,
+            t.t_crated_time as cratedTime,
+            t.t_updated_time as updatedTime
+        from t_task_token t
+        where (t.t_status=0 or t.t_status =-1) and t.t_heartbeat='dead' and (UNIX_TIMESTAMP(now()) - t_updated_time) > 3600*24
+        order by t.t_id limit 1
     </select>
 
     <update id="updateTaskToken" parameterType="com.tensai.pojo.Token">
         UPDATE t_task_token
-        SET t_last_task_instance_id = #{lastTaskInstanceId}, t_status = #{status},t_updated_by=#{updatedBy}, t_updated_time=#{updatedTime}
-            WHERE t_id = #{id};
+        SET t_last_task_instance_id = #{lastTaskInstanceId}, t_status = #{status},t_heartbeat=#{heartbeat},t_updated_by=#{updatedBy}, t_updated_time=#{updatedTime}
+            WHERE t_id = #{id}
     </update>
 
     <select id="findByTokenName" resultType="Token" parameterType="string">
@@ -47,4 +51,16 @@
         from t_task_token where t_status = 1 and t_name =#{tokenName}
     </select>
 
+    <update id="updateTokenHeartbeat" parameterType="com.tensai.pojo.Token">
+        UPDATE t_task_token
+        SET t_heartbeat = #{heartbeat}, t_last_heartbeat_time = UNIX_TIMESTAMP(now()),t_updated_by=#{updatedBy}
+        WHERE t_name = #{name}
+    </update>
+
+    <update id="monitorHeartbeat">
+        UPDATE t_task_token
+        SET t_status = 0,t_heartbeat='dead',t_updated_by='monitor',t_updated_time=UNIX_TIMESTAMP(now())
+        where t_status=1 and (UNIX_TIMESTAMP(now()) - t_last_heartbeat_time) > 600
+    </update>
 </mapper>
+

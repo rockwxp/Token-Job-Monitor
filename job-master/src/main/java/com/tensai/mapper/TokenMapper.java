@@ -20,4 +20,8 @@ public interface TokenMapper {
     Integer updateTaskToken(Token taskToken);
 
     Token findByTokenName(String tokenName);
+
+    Integer updateTokenHeartbeat(Token token);
+
+    Integer monitorHeartbeat();
 }

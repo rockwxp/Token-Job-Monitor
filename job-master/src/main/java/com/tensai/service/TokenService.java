@@ -15,5 +15,7 @@ public interface TokenService {
 
     String getTokenTask(String taskOwner);
 
-    Integer endTokenTask(String tokenName, String taskOwner);
+    Integer endTokenTask(String tokenName, String taskOwner,Integer status);
+
+    Integer sendHeartbeat(String tokenName,String heartbeat, String taskOwner);
 }

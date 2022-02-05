@@ -18,13 +18,13 @@
 
 
     <insert id="addTaskInstance" parameterType="com.tensai.pojo.TaskInstance">
-        insert into t_task_instance (t_id,t_type,t_value,t_status,t_task_owner,t_created_by,t_updated_by)
-        values (#{id},#{type},#{value},#{status},#{taskOwner},#{createdBy},#{updatedBy})
+        insert into t_task_instance (t_id,t_type,t_value,t_status,t_task_owner,t_created_by,t_updated_by,t_crated_time)
+        values (#{id},#{type},#{value},#{status},#{taskOwner},#{createdBy},#{updatedBy},#{cratedTime})
     </insert>
 
     <update id="updateTaskInstance" parameterType="com.tensai.pojo.TaskInstance">
         UPDATE t_task_instance
-        SET t_status = 0,t_updated_by=#{updatedBy}, t_updated_time=#{updatedTime}
+        SET t_status = #{status},t_updated_by=#{updatedBy}, t_updated_time=#{updatedTime}
         WHERE t_id = #{id};
 
     </update>

@@ -37,19 +37,26 @@ public class TokenController {
     }
 
     //http://localhost:8081/job-master/token/getTokenTask?taskOwner=rock
-    //https://decent-destiny-329402.uc.r.appspot.com/job-master/token/getTokenTask?taskOwner=rock
+    //https://decent-destiny-329402.uc.r.appspot.com/job-master/token/getTokenTask?taskOwner=rock001
     @RequestMapping("getTokenTask")
     @ResponseBody
     public String getTokenTask(@RequestParam String taskOwner){
         return tokenService.getTokenTask(taskOwner);
     }
 
-    //http://localhost:8081/job-master/token/endTokenTask?tokenName=FIDA&taskOwner=rock1
-    //https://decent-destiny-329402.uc.r.appspot.com/job-master/token/endTokenTask?tokenName=HXRO&taskOwner=rock1
+    //http://localhost:8081/job-master/token/endTokenTask?tokenName=HXRO&taskOwner=rock1&status=0
+    //https://decent-destiny-329402.uc.r.appspot.com/job-master/token/endTokenTask?tokenName=HXRO&taskOwner=rock001&status=0
     @RequestMapping("endTokenTask")
     @ResponseBody
-    public Integer endTokenTask(@RequestParam String tokenName,@RequestParam String taskOwner){
-        return tokenService.endTokenTask(tokenName,taskOwner);
+    public Integer endTokenTask(@RequestParam String tokenName,@RequestParam String taskOwner,@RequestParam Integer status){
+        return tokenService.endTokenTask(tokenName,taskOwner,status);
+    }
+    //http://localhost:8081/job-master/token/sendHeartbeat?tokenName=FIDA&taskOwner=rock1&heartbeat=running
+    //https://decent-destiny-329402.uc.r.appspot.com/job-master/token/sendHeartbeat?tokenName=HXRO&taskOwner=rock001&status=0&heartbeat=running
+    @RequestMapping("sendHeartbeat")
+    @ResponseBody
+    public Integer sendHeartbeat(@RequestParam String tokenName,@RequestParam String heartbeat,@RequestParam String taskOwner){
+        return tokenService.sendHeartbeat(tokenName,heartbeat,taskOwner);
     }
 
 }

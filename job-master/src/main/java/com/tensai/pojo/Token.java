@@ -19,8 +19,10 @@ public class Token {
     private String name;
     private String lastTaskInstanceId;
     private Integer status;
+    private String heartbeat;
+    private Long lastHeartbeatTime;
     private String createdBy;
     private String updatedBy;
-    private Timestamp cratedTime;
-    private Timestamp updatedTime;
+    private Long cratedTime;
+    private Long updatedTime;
 }

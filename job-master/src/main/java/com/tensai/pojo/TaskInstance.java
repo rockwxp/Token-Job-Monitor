@@ -24,8 +24,8 @@ public class TaskInstance {
     private String taskOwner;
     private String createdBy;
     private String updatedBy;
-    private Timestamp cratedTime;
-    private Timestamp updatedTime;
+    private Long cratedTime;
+    private Long updatedTime;
 
 
 }

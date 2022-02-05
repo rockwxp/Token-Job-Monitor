@@ -50,6 +50,8 @@ public class TaskInstanceServiceImpl implements TaskInstanceService {
         taskInstance.setTaskOwner(taskOwner);
         taskInstance.setCreatedBy(taskOwner);
         taskInstance.setUpdatedBy(taskOwner);
+        taskInstance.setCratedTime(System.currentTimeMillis()/1000);
+        taskInstance.setUpdatedTime(System.currentTimeMillis()/1000);
         Integer result = taskInstanceMapper.addTaskInstance(taskInstance);
         return taskInstance;
     }
