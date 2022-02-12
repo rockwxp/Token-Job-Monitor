@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea468913-ed93-4930-a5cf-516f67119ab3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/job-master/.README_images/0d33d6cd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job-master/.README_images/0ef4832b.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/job-master/README.md" afterDir="false" />
     </list>
@@ -278,6 +276,7 @@
       <workItem from="1644035415823" duration="11628000" />
       <workItem from="1644548452128" duration="2782000" />
       <workItem from="1644599022093" duration="699000" />
+      <workItem from="1644637157398" duration="1085000" />
     </task>
     <servers />
   </component>
@@ -321,9 +320,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="898" y="395" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.2560.1440/-1680.374.1680.1025@0.0.2560.1440" timestamp="1643035529964" />
-    <state x="1090" y="567" key="GrepConsoleSound" timestamp="1644599080121">
+    <state x="1090" y="567" key="GrepConsoleSound" timestamp="1644638291832">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="1090" y="567" key="GrepConsoleSound/0.0.2560.1440/-1680.374.1680.1025@0.0.2560.1440" timestamp="1644638291832" />
     <state x="1090" y="567" key="GrepConsoleSound/0.0.2560.1440@0.0.2560.1440" timestamp="1644599080121" />
     <state width="1224" height="176" key="GridCell.Tab.0.bottom" timestamp="1644065231781">
       <screen x="0" y="0" width="1680" height="1050" />
