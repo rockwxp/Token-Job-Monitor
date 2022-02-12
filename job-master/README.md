@@ -2,7 +2,7 @@
 
 The purpose of this project is to distribute tasks to nodes(pc) and maximum utilization of resources to do the Data transformation.
 ### design
-![](.README_images/0ef4832b.png)
+![](.README_images/b3dad111.png)
 
 #####link：
 https://app.diagrams.net/#Hrockwxp%2Fspringboot_project%2Fmain%2Fjob-master%2Fgraph%2Fsys_design.drawio
