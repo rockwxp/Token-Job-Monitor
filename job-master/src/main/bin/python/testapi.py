@@ -32,7 +32,7 @@ def end_token_task(taskOwner,token,status) :
           print(f"failed the task for {token}")
 
 
-taskOwner="rock_test"
+taskOwner="rock_001"
 stop_beat = False
 token=get_token_task(taskOwner)
 t=threading.Thread(target = heartbeat, args =(lambda : stop_beat,token ))
