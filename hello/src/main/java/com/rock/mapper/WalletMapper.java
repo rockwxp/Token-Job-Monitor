@@ -1,6 +1,6 @@
 package com.rock.mapper;
 
-import com.rock.pojo.TaskInstance;
+import com.rock.pojo.Wallet;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -11,6 +11,6 @@ import java.util.List;
  * @description TODO
  */
 @Mapper
-public interface TaskInstanceMapper {
-    List<TaskInstance> findAll();
+public interface WalletMapper {
+    List<Wallet> getWalletAddress();
 }
