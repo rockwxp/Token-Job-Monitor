@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rock.mapper.WalletMapper">
+
+    <select id="getWalletAddress" resultType="Wallet">
+        SELECT address FROM wallets_to_analyze LEFT JOIN wallets ON wallets_to_analyze.wallet_id = wallets.id
+        UNION
+        SELECT wallets.address
+        FROM wallet_performance,
+        wallets
+        WHERE  wallet_performance.wallet_id = wallets.id
+        AND wallet_performance.lastweek != -1
+        AND wallet_performance.lifelong != -1
+        AND wallet_performance.balance > 1000
+        AND wallet_performance.till_time IS NOT NULL
+    </select>
+
+</mapper>
+

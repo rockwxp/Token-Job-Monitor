@@ -1,8 +1,9 @@
 package com.rock.controller;
 
 
-import com.rock.pojo.TaskInstance;
-import com.rock.service.TaskInstanceService;
+
+import com.rock.pojo.Wallet;
+import com.rock.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,16 +17,17 @@ import java.util.List;
  * @description TODO
  */
 @Controller
-@RequestMapping("/taskInstance")
-public class TaskInstanceController {
+@RequestMapping("/wallet")
+public class WalletController {
 
     @Autowired
-    private TaskInstanceService taskInstanceService;
+    private WalletService walletService;
 
-    @RequestMapping("findAll")
+    //http://localhost:8089/hello/wallet/getWalletSignature
+    @RequestMapping("getWalletSignature")
     @ResponseBody
-    public List<TaskInstance> findAll(){
+    public List<Wallet> getWalletSignature(){
 
-        return taskInstanceService.findAll();
+        return walletService.getWalletSignature();
     }
 }

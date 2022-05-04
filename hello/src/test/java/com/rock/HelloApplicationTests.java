@@ -1,27 +1,44 @@
 package com.rock;
 
-import com.rock.pojo.TaskInstance;
-import com.rock.service.TaskInstanceService;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.*;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.Arrays;
+
 
 @SpringBootTest(classes = HelloApplication.class)
 class HelloApplicationTests {
 
-    @Autowired
-    private TaskInstanceService taskInstanceService;
+    @Test
+     void accountSubscribe(){
+         RestTemplate restTemplate=new RestTemplate();
+         String url = "wss://ancient-delicate-butterfly.solana-mainnet.quiknode.pro/993809acc9f1d922b520bef286512591c9128b9e/";
+        String dataToSend="{\n" +
+                "  \"jsonrpc\": \"2.0\",\n" +
+                "  \"id\": 1,\n" +
+                "  \"method\": \"accountSubscribe\",\n" +
+                "  \"params\": [\n" +
+                "    \"CM78CPUeXjn8o3yroDHxUtKsZZgoy4GPkPPXfouKNH12\",\n" +
+                "    {\n" +
+                "      \"encoding\": \"jsonParsed\"\n" +
+                "    }\n" +
+                "  ]\n" +
+                "}";
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<String> entity = new HttpEntity<>(dataToSend, headers);
+        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
+        System.out.println(responseEntity.getBody());
 
-    @Autowired
-    private String config_test2;
+    }
 
     @Test
-    void test() {
-        List<TaskInstance> all = taskInstanceService.findAll();
-        all.forEach(System.out::println);
-        System.out.println(config_test2);
+    void socketTest(){
+
     }
 
 }

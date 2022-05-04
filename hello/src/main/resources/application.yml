@@ -1,3 +1,10 @@
+app:
+  kafka:
+    producer:
+      topic: test
+    consumer:
+      topic: test  #test test-events
+
 server:
   port: 8089
   servlet:
@@ -19,7 +26,7 @@ spring:
     min-idle: 5
     maxActive: 20
     # 配置获取连接等待超时的时间
-    maxWait: 60000
+    maxWait: 28800
     # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
     timeBetweenEvictionRunsMillis: 60000
     # 配置一个连接在池中最小生存的时间，单位是毫秒
@@ -28,6 +35,8 @@ spring:
     testWhileIdle: true
     testOnBorrow: false
     testOnReturn: false
+    time-between-eviction-runs-millis: 300000     #空闲连接回收的时间间隔，与test-while-idle一起使用，设置5分钟
+    min-evictable-idle-time-millis: 1800000      #连接池空闲连接的有效时间 ，设置30分钟
     # 打开PSCache，并且指定每个连接上PSCache的大小
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
@@ -53,7 +62,30 @@ spring:
       login-username: admin
       # 登录密码
       login-password: 123456
+  kafka:
+    bootstrap-servers: 34.74.216.89:9092 #34.74.216.89:9092 10.142.0.2:9092 localhost:9092
+    producer: # producer 生产者
+      retries: 0 # 重试次数
+      acks: 1 # 应答级别:多少个分区副本备份完成时向生产者发送ack确认(可选0、1、all/-1)
+      batch-size: 16384 # 批量大小
+      buffer-memory: 33554432 # 生产端缓冲区大小
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+    consumer: # consumer消费者
+      group-id: defaultgroup # 默认的消费组ID
+      enable-auto-commit: true # 是否自动提交offset
+      auto-commit-interval: 100  # 提交offset延时(接收到消息后多久提交offset)
+      # earliest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，从头开始消费
+      # latest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，消费新产生的该分区下的数据
+      # none:topic各分区都存在已提交的offset时，从offset后开始消费；只要有一个分区不存在已提交的offset，则抛出异常
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
 mybatis:
   type-aliases-package: com.rock.pojo
   mapper-locations: classpath:mapper/*.xml
+
+
+
