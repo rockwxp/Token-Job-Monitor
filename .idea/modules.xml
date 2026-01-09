@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hello/hello.iml" filepath="$PROJECT_DIR$/hello/hello.iml" />
-      <module fileurl="file://$PROJECT_DIR$/job-master/job-master.iml" filepath="$PROJECT_DIR$/job-master/job-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot_project.iml" filepath="$PROJECT_DIR$/.idea/springboot_project.iml" />
     </modules>
   </component>
